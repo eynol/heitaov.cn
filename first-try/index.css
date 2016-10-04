@@ -1,0 +1,84 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: lucida, helvetica, "Microsoft Yahei";
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-color: #e3e2de;
+}
+.background-date {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+.background-date span {
+  display: block;
+  font-size: 70vw;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  margin-left: -30%;
+  font-weight: bold;
+  line-height: 100vh;
+  transition: 1.5s;
+  transform: translateX(0);
+  text-shadow: 1px 4.7px 11.7px rgba(49, 49, 49, 0.74), 9px 2.7px 30.7px rgba(49, 49, 49, 0.74);
+}
+.background-date span.hide {
+  transform: translateX(-100%);
+}
+.m-header {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+}
+a.sitename {
+  color: #fff;
+  font-size: 30px;
+  text-decoration: none;
+  font-family: Arial;
+}
+.m-nav {
+  position: fixed;
+  right: 20px;
+  top: 200px;
+  z-index: 10;
+}
+.m-container {
+  position: relative;
+  box-sizing: border-box;
+  max-width: 100%;
+  min-height: 100%;
+  padding: 60px 200px 0;
+}
+.section-first {
+  padding: 50px;
+  margin-top: 30px;
+}
+.m-footer {
+  position: fixed;
+  right: 20px;
+  bottom: 0;
+  z-index: 2;
+}
+.be-better {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 80vw;
+  height: 70vh;
+  background-color: #fff;
+  box-shadow: 0 3.4px 15.3px rgba(49, 49, 49, 0.34), 0px 8.1px 27.4px rgba(49, 49, 49, 0.24);
+}
+.words-container {
+  position: relative;
+  display: inline-block;
+  line-height: 70vh;
+  padding: 20px 30px;
+}
