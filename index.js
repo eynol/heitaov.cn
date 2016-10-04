@@ -15,4 +15,4 @@ function prefix(n) {
 
 
 datespan.textContent = prefix(date);
-monthspan.textContent = monthNames[month];
+monthspan.textContent = monthNames[month].slice(0,3)+"."+ today.getFullYear();
