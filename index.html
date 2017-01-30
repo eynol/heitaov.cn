@@ -1,23 +1,21 @@
 <!DOCTYPE html>
-<html lang="zh_cn">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <meta http-equiv='x-dns-prefetch-control' content='on'>
-    
-        <link rel="dns-prefetch" href="https://github.io">
-        <link rel="prerender" href="https://vankai.github.io">        
-
-
-    <title>HEITAOV.CN</title>
-    <link rel="stylesheet" href="./index.css" media="screen" title="default">
-
-
-
-    <script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HEITAOV.CN | 设计，前端，web程序</title>
+  <link rel="stylesheet" href="./lib/swiper3/css/swiper.min.css">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="shortcut icon" href="/favicon.png">
+  <meta name="theme-color" content="black">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="application-name" content="HEITAOV">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="/heitaov_icon@192.png">
+  <link rel="icon" sizes="128x128" href="/heitaov_icon@128.png">
+  <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -25,47 +23,95 @@
 
   ga('create', 'UA-89535578-2', 'auto');
   ga('send', 'pageview');
-
 </script>
 </head>
 
 <body>
-    <div class="background-date">
-        <span class="bg-date"id="bg-date">--</span>
-        <span class="bg-month" id="bg-month">??</span>
+  <header class="site-header">
+    <a class="site-header-logo" href="#">V</a>
+    <div class="site-header-content">
+      <!--<nav>
+        <a href="#">home</a>
+        <a href="#">blog</a>
+        <a href="#">contact</a>
+      </nav>-->
     </div>
-    <header class="m-header">
-            <p><a href="//heitaov.cn" class="sitename">HEITAOV</a></p>
-            <nav class="m-nav">
-                <ul>
-                    <li><a href="/">首页</a></li>
-                    <li><a href="/apps">应用</a></li>
-                     <li><a href="https://vankai.github.io">博客</a></li>
-                </ul>
-            </nav>
-    </header>
-
-    <div class="m-container">
-      <div class="be-better">
-        <div class="words-container">
-          <p>把一成不变的生活留给那些平庸的人</p>
-
+    <div class="site-slogan">
+      <span class="slogan">让自己，成为一个不可替代的人。</span>
+    </div>
+  </header>
+  <div class="site-banner">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide w-unique">
+          <h1>一生的时光在历史轨迹里<br>就像烟花一样<br>若不灿烂<br>怎么对得起此生</h1>
+        </div>
+        <div class="swiper-slide w-happiness">
+          <h1><span class="happiness">Happiness</span> = Reality - Expectations</h1>
+          <h1><span class="happiness">快乐</span> = 现实 – 预期</h1>
+        </div>
+        <div class="swiper-slide w-moon">
+          <h1>I have a planet to conquer.</h1>
+          <blockquote>
+            <p>from movie <i>Iron Sky</i></p>
+          </blockquote>
         </div>
       </div>
+      <div class="swiper-pagination"></div>
     </div>
+  </div>
+  <div class="project-container">
+    <div class="project">
+      <div class="project-content">
+        <a href="https://vankai.github.io" target="_blank">
+          <img src="./img/screenshot/myblog.png" alt="My Blog Screenshot Image" title="My Blog Screenshot Image">
+          <div class="project-overlay">
+            <div class="project-text">
+              <div><span class="project-num">01</span></div>
+              <h1>Personal Blog</h1>
+              <div class="project-meta">
+                design, website
+              </div>
+              —
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="https://github.com/vankai" target="_blank">GitHub</a>
+        <br>
+        <a href="https://vankai.github.io" target="_blank" title="如果打不开这个网页，可以访问tomato3.coding.me">Blog</a>
+        <br>
+        <a href="mailto:mr.taokai@foxmail.com?subject=Hello">mr.taokai@foxmail.com</a>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy;
+          <script>
+            document.write(new Date().getFullYear())
+          </script> <a href="http://www.miitbeian.gov.cn/" target="_blank">蜀ICP备16001587号-1</a></p>
+      </div>
+    </div>
+  </footer>
+  <script src="./lib/swiper3/js/swiper.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      pagination: '.swiper-pagination',
+      paginationClickable: '.swiper-pagination',
+      ousewheelControl: true,
+      loop: true,
+      autoplay: 5000,
+      //autoplayDisableOnInteraction: false,
+      effect: "fade",
+    });
 
-
-    <footer class="m-footer">
-        <div class="copyright">
-          <p>本网站用于作品展示</p>
-            <p>&copy;<!--
-            --><script>
-                    document.write(new Date().getFullYear())
-                </script> heitaov.cn 蜀ICP备16001587号-1</p>
-        </div>
-    </footer>
-    <script src="./index.js">
-    </script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js');
+  }
+  </script>
 </body>
 
 </html>

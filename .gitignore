@@ -83,3 +83,9 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+
+node_modules/*
+/lib/*
+/img/*
+!img/screenshot

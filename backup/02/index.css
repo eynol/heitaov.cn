@@ -1,0 +1,122 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: lucida, helvetica, "Microsoft Yahei";
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-color: #fff500;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.background-date {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+.background-date .bg-date {
+  display: block;
+  font-size: 70vw;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  margin-left: -20%;
+  font-weight: bold;
+  line-height: 100vh;
+  transition: 1.5s;
+  transform: translateX(0);
+}
+.background-date .bg-month {
+  display: block;
+  position: absolute;
+  z-index: 11;
+  bottom: 5px;
+  left: 5px;
+  font-size: 53px;
+  /* border-bottom: solid 10px #fff500; */
+  color: #f1f1f1;
+  padding: 10px;
+  text-transform: capitalize;
+}
+.background-date span.hide {
+  transform: translateX(-100%);
+}
+a.sitename {
+  font-size: 30px;
+  font-family: Arial;
+}
+.m-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  color: #fff;
+  padding: 40px 34px;
+  transition: 0.5s;
+}
+.m-header .m-nav li {
+  display: block;
+  height: 0;
+  transition: height 0.5s;
+  transition-delay: 0.3s;
+  overflow: hidden;
+  text-align: right;
+  border-right: solid 2px #fff;
+}
+.m-header .m-nav a {
+  font-size: 16px;
+  letter-spacing: 4px;
+  color: #000;
+  line-height: 30px;
+  padding-left: 5px;
+  border-left: solid 4px transparent;
+}
+.m-header .m-nav a:hover {
+  border-left: solid 4px #000;
+}
+.m-header:hover {
+  background-color: rgba(255, 255, 255, 0.903);
+}
+.m-header:hover .sitename {
+  color: #000;
+}
+.m-header:hover .m-nav li {
+  height: 30px;
+}
+.m-container {
+  position: relative;
+  min-width: 100%;
+  min-height: 100%;
+  padding: 114px 0 0 200px;
+  box-sizing: border-box;
+}
+.be-better {
+  display: flex;
+  justify-content: flex-start;
+}
+.words-container {
+  position: relative;
+  display: inline-block;
+  font-size: 80px;
+  padding: 20px 30px;
+  margin-right: 40px;
+  border: 6px solid #fff;
+  color: #fff;
+}
+.words-container p {
+  margin: 0.5em 0;
+}
+.m-footer {
+  position: fixed;
+  right: 20px;
+  bottom: 0;
+  z-index: 2;
+}
