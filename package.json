@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/vankai/heitaov.cn#readme",
   "devDependencies": {
-    "webpack": "^1.14.0",
-    "webpack-dev-server": "^1.16.2"
+    "gulp-imagemin": "^3.1.1"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
   }
 }
