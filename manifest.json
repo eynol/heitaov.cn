@@ -1,6 +1,7 @@
 {
   "short_name": "HEITAOV",
   "name": "HEITAOV",
+  "id":"20170203",
   "serviceworker": {
     "src": "sw.js",
     "scope": "/",
