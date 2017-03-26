@@ -1,8 +1,17 @@
 {
   "name": "heitaov.cn",
   "version": "1.0.0",
-  "description": "My personal site",
-  "main": "index.js",
+  "description": "",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-sourcemaps": "^1.11.1",
+    "gulp-stylus": "^2.6.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,14 +24,5 @@
   "bugs": {
     "url": "https://github.com/vankai/heitaov.cn/issues"
   },
-  "homepage": "https://github.com/vankai/heitaov.cn#readme",
-  "devDependencies": {
-    "gulp-imagemin": "^3.1.1",
-    "gulp-sourcemaps": "^2.4.0",
-    "gulp-strip-debug": "^1.1.0",
-    "gulp-stylus": "^2.6.0"
-  },
-  "dependencies": {
-    "gulp": "^3.9.1"
-  }
+  "homepage": "https://github.com/vankai/heitaov.cn#readme"
 }
