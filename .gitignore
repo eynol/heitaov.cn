@@ -86,7 +86,3 @@ $RECYCLE.BIN/
 
 
 node_modules/*
-/lib/*
-/img/*
-/imgmin/*
-!img/screenshot
