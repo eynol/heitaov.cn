@@ -13,7 +13,7 @@ gulp.task('views:index', function buildHTML() {
     .src('index.pug')
     .pipe(plumber())
     .pipe(pug())
-    .pipe(gulp.dest('./build'))
+    .pipe(gulp.dest('./doc'))
 });
 gulp.task('stylus:index', function () {
   return gulp
@@ -22,7 +22,7 @@ gulp.task('stylus:index', function () {
     .pipe(sourcemaps.init())
     .pipe(stylus({compress: true}))
     .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest('./build'))
+    .pipe(gulp.dest('./doc'))
     .pipe(reload({stream: true}))
 
 })
@@ -37,15 +37,15 @@ gulp.task('watch:index', function () {
 
 gulp.task('serve', ['watch'], function () {
 
-  browserSync.init({server: "./build",port:7777});
+  browserSync.init({server: "./doc",port:7777});
 
   gulp
-    .watch("build/*.html")
+    .watch("doc/*.html")
     .on('change', reload);
 });
 
 gulp.task('clean:build', function () {
-  return del(["build"]).then(() => {
+  return del(["doc"]).then(() => {
     console.log("finished clean build")
   })
 })
