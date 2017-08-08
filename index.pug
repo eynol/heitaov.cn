@@ -4,7 +4,7 @@ html(lang="zh")
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    title Heitaov，前端手艺人
+    title 陶楷 | Kai Tao
     link(href="index.css"  rel="stylesheet")
     link(rel="shortcut icon" href="./img/heitaov@72.png")
     meta(name="theme-color" content="black")
@@ -18,42 +18,50 @@ html(lang="zh")
       ga('send', 'pageview');
 
 
-  body.bg-yellow
-    .wrapper
-      header.logo
-        img(src="./img/heitaov.png", alt="Heitaov logo")
-      nav
-        p.song.slogan 让自己，成为一个不可替代的人。
-        ul
-          li.hide
-            a(href="#oldtimes" ) 过去
-          li
-            a(href="#blog") 博客
-          li
-            a(href="#code") 代码
-          li
-            a(href="#works") 作品
-          li
-            a(href="#email") 邮箱
-          li
-            a(href="#wechat") 订阅号
-      section.hidden
-        p#oldtimes "过去"标签开发中
-        p#blog
-          a(href="https://vankai.github.io" target="_blank") 主站
-          a(href="https://tomato3.coding.me" target="_blank") 应急
-        p#code
-          a(href="https://github.com/vankai" target="_blank") Gihub代码仓库
-          a(href="https://coding.net/u/tomato3" target="_blank") Coding代码仓库
-        p#works
-          a(href="https://cqupt.heitaov.cn" target="_blank") 重邮课表
-          a(href="https://vankai.github.io" target="_blank") HEXO主题
-        p#email 
-          a(href="mailto:mr.taokai@foxmail.com?subject=Hello" target="_blank") mr.taokai@foxmail.com
-        #wechat
-          img(src="./img/subscription.jpg", alt="微信订阅号：斑马世刺" title="微信扫描二维码添加订阅号:斑马世刺")
-      footer
-        p.copy &copy;2017
-          a(href="mailto:i@heitaov.cn") i@heitaov.cn
-          a(href="http://www.miitbeian.gov.cn/" target="_blank") 蜀ICP备16001587号-1
-
+  body
+    .logo
+      h1 heitaov.cn
+    .seasons
+      .spring
+        .poet
+          h1(title="「我很好。」") 「嘿，你好吗？」
+        .white
+          p Hi~
+          p 我叫陶楷，一名Web前端工程师，书虫。 
+      .summer
+        .white
+          p 你可以通过以下方式找到我
+          dl
+            dt 邮箱
+            dd 
+              a(href="mailto:mr.taokai@foxmail.com?subject=[from heitaov.cn]Write Your Email Title here", title="直接给我发邮件") mr.taokai@foxmail.com
+            dt 博客
+            dd 
+              a(href="https://vankai.github.io", title="将打开新标签" ,target="_blank") Github个人博客
+            dt 微博
+            dd 
+              a(href="http://weibo.com/heitaovan", title="将打开新标签" ,target="_blank") 嘿桃码陶
+            dt QQ
+            dd 
+              span.e444 625608852
+      .fail
+        h1 我的作品
+        .collections
+          .card
+            h3 重邮课表PWA
+            p 直观展示今天和明天的课表，并且可以离线使用，是一个Progressive Web Applicaiton。
+            footer 
+              a(href="https://cqupt.heitaov.cn", title="将打开新页面" ,target="_blank").class 查看 
+          
+      .winter
+        .centered
+          .white 
+            h2 你站在桥上看风景， 
+            h2 看风景人在楼上看你。 
+            h2 明月装饰了你的窗子， 
+            h2 你装饰了别人的梦。
+            p.from —— 卞之琳 断章
+        footer.cite
+          p Copyright ©2017 <a href="http://www.miitbeian.gov.cn/" target="_blank">蜀ICP备16001587号-1</a>
+     
+    
