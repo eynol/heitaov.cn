@@ -1,7 +1,8 @@
 *
   box-sizing  border-box 
 html
-  background-color: #fff500;
+  background-color: #e7e7e7
+  scroll-behavior: smooth;
 .hide{
   display: none;
 }
@@ -20,7 +21,13 @@ fangsong()
 
 .song
   fangsong();
-
+.e444
+  color: #444
+a
+  text-decoration: none;
+  color: #444;
+  &:hover
+    text-decoration: underline
 html
 body
   height: 100%;
@@ -28,100 +35,129 @@ body
   margin: 0
   padding: 0
   font-default()
-  text-align: center
-.wrapper
-  min-height: 100%;
-  position: relative;
-a 
-  color black
-  text-decoration: none
-  &:hover
-    text-decoration: underline
 
-.handwriting
-  font-family: against;
-  font-weight: normal
-.headline 
-  font-size: 6rem;
-  text-align: center
-.slogan
-  font-size: 24px;
-.bg-yellow
-  background-color: #fff500
+
 .logo
-  width: 62%
-  height: 50%
-  margin: auto;
-  position: relative
-.logo img
-  width: 100%
-  height: 100%
-  object-fit: contain;
-  pointer-events: none;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -ms-user-select: none
-  user-select: none
-@media screen and (min-width:769px)
-  .logo
-    padding-top: 45px;
-@media screen and (max-width:425px)
-  .logo
-    width:100%;
-    padding:0 20px
+  position: absolute;
+  top: 15px;
+  left: 50px;
+  z-index: 1;
 
-
-
-.hidden
-  position: relative;
-  width: 100%;
-  height: 308px;
-  &>* 
-    transform: scale(1,0);
-    transition: all .5s
-    transform-origin: center center
-  :target
-    transform: scale(1);
-  p
+.seasons
+  height: 100%;
+  &>div
+    overflow: hidden
+    position: relative
+    height: 100%;
+    perspective: 3000px;
+    
+.seasons .s-title
+  position: absolute;
+  right: 0;
+  bottom: 40px;
+  font-size: 5em;
+ 
+  
+.poet
+  fangsong();
+  writing-mode: vertical-rl;
+  letter-spacing: 5px;
+.white
+  display: inline-block
+  background-color: white;
+  padding: 30px;
+.spring
+  background-color: #c0ebd7
+  .white
     position: absolute;
-    top:0
-    width: 100%;
-    min-height: 3rem;
-    a
-      padding: 5px 10px
-      background-color: black
-      font-size: 16px
-      line-height: 36px
-      color: yellow
-#works
-#blog
-#code 
-  a
-    margin: 5px
-// #wechat
-//   width: 200px
-//   height: 200px 
-//   img 
-//     object-fit: cover
-nav
-  ul 
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  li
-    display: inline-block
-    margin: 5px
-    a
-      padding: 5px 10px
-      background-color: black
-      font-size: 16px
-      line-height: 36px
-      color: yellow
-      text-decoration: none
+    bottom: 120px;
+    left: 50px;
+    max-width: 400px;
+  .poet
+    position: absolute;
+    top: 120px;
+    right: 30%;
+   
+  
+dt
+  font-weight: bold;
+dd 
+  transform: translateY(-100%)
 
-footer
-  position: absolute
-  bottom: 0
-  width: 100%;  
-.copy 
-  color black;
+.summer
+  background-color: #f47983;
+  text-align: center
+  .white
+    display: inline-block
+    text-align: left;
+    margin-top: 120px;
+    
+
+.fail
+  background-color: #fff2df
+  padding-top: 40px
+  &>h1
+    text-align: center
+    position: relative
+    font-weight: normal
+    padding: 20px 30px
+    
+.winter
+  background-color: #f0fcff
+  simsun()
+  .centered
+    margin: 60px auto 
+    text-align: center;
+  .white
+    writing-mode: vertical-rl
+    text-align: left
+    line-height: 2
+  .from
+    text-align: right;
+    font-default()
+.collections
+  text-align: center;
+
+.card
+  display: inline-block;
+  text-align: left
+  width 20em
+  margin: 0 5px
+  padding: 20px 30px
+  border-radius:  4px
+  background-color: #fff;
+  // box-shadow: 0 3px 20px rgba(0,0,0,.24)
+
+  h3
+    font-weight: normal
+  footer
+    text-align: right
+footer.cite
+  position: absolute;
+  bottom: 0;
+  right: 40px;
+
+@media screen and (max-width:500px)
+  .seasons>div.spring 
+    height: auto;
+  .spring
+    .poet
+      display: block
+      position: relative
+      padding-top: 100px;
+      padding-right: 30px;
+      top: auto
+      right: auto
+      width: 100%
+    .white
+      position: relative;
+      margin: 50px auto;
+      bottom: auto;
+      left: 0;
+      right: auto;
+      display: block;
+  .winter .white 
+    overflow: auto;
+    width: 100%;
+  footer.cite
+    right: 2em;
