@@ -23,14 +23,20 @@ html(lang="zh")
       h1 heitaov.cn
     .seasons
       .spring
-        .poet
-          h1(title="「我很好。」") 「嘿，你好吗？」
+        .conversation
+          div
+            .you
+              span 嘿，你好吗？<br/>我很好。
+          div
+            .me
+              span 是吗？
         .white
           p Hi~
-          p 我叫陶楷，一名Web前端工程师，书虫。 
+          p 我叫陶楷，一名Web前端工程师，喜欢看书，ENFJ-A。 
+          p If I was the music, would you be the dancer?
       .summer
         .white
-          p 你可以通过以下方式找到我
+          p 你可以通过以下方式联系我
           dl
             dt 邮箱
             dd 
@@ -47,6 +53,11 @@ html(lang="zh")
       .fail
         h1 我的作品
         .collections
+          .card
+            h3 一言PWA
+            p 展示有意义或者收藏的一句话，采用思源宋体，可以选择横竖排版。
+            footer 
+              a(href="https://hitokoto.heitaov.cn", title="将打开新页面" ,target="_blank").class 查看 
           .card
             h3 重邮课表PWA
             p 直观展示今天和明天的课表，并且可以离线使用，是一个Progressive Web Applicaiton。
