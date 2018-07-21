@@ -5,6 +5,7 @@
   "main": "gulpfile.js",
   "devDependencies": {
     "browser-sync": "^2.18.8",
+    "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-imagemin": "^3.2.0",
     "gulp-plumber": "^1.1.0",
@@ -13,7 +14,9 @@
     "gulp-stylus": "^2.6.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp  serve",
+    "build":"gulp"
   },
   "repository": {
     "type": "git",

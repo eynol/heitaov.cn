@@ -8,33 +8,39 @@ html(lang="zh")
     link(href="index.css"  rel="stylesheet")
     link(rel="shortcut icon" href="./img/heitaov@72.png")
     meta(name="theme-color" content="black")
+
     script.
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
+    
       ga('create', 'UA-89535578-2', 'auto');
       ga('send', 'pageview');
 
 
   body
-    .logo
-      h1 heitaov.cn
+    
     .seasons
       .spring
-        .conversation
-          div
-            .you
-              span 嘿，你好吗？<br/>我很好。
-          div
-            .me
-              span 是吗？
+        .bg
+          h1 KAITAOKAITAOKAITAOKAITAO
+          h1 AITAOKAITAOKAITAOKAITAOK
+          h1 ITAOKAITAOKAITAOKAITAOKA
+          h1 TAOKAITAOKAITAOKAITAOKAI
         .white
           p Hi~
           p 我叫陶楷，一名Web前端工程师，喜欢看书，ENFJ-A。 
           p If I was the music, would you be the dancer?
       .summer
+        .bg
+          h1 △ ▽ ▷ ◁ ▲ ▼ ● ◆ ▶ ◀
+          h1 ▲ ▼ ▶ ◀ △ ▽ ▷ ◁ 
+          h1 △ ▽ ▷ ◁  ▲ ▼ ● ◆ ▶ ◀ 
+          h1 ▲ ▼ ● ◆ ▶ ◀ △ ▽ ▷ ◁ 
+          h1 △ ▽ ▷ ◁  ▲ ▼ ● ◆ ▶ ◀ 
+         
+
         .white
           p 你可以通过以下方式联系我
           dl
@@ -43,14 +49,11 @@ html(lang="zh")
               a(href="mailto:mr.taokai@foxmail.com?subject=[from heitaov.cn]Write Your Email Title here", title="直接给我发邮件") mr.taokai@foxmail.com
             dt 博客
             dd 
-              a(href="https://vankai.github.io", title="将打开新标签" ,target="_blank") Github个人博客
-            dt 微博
-            dd 
-              a(href="http://weibo.com/heitaovan", title="将打开新标签" ,target="_blank") 嘿桃码陶
+              a(href="https://eynol.github.io", title="将打开新标签" ,target="_blank") eynol.github.io
             dt QQ
             dd 
               span.e444 625608852
-      .fail
+      .autumn
         h1 我的作品
         .collections
           .card
@@ -58,20 +61,18 @@ html(lang="zh")
             p 展示有意义或者收藏的一句话，采用思源宋体，可以选择横竖排版。
             footer 
               a(href="https://hitokoto.heitaov.cn", title="将打开新页面" ,target="_blank").class 查看 
-          .card
-            h3 重邮课表PWA
-            p 直观展示今天和明天的课表，并且可以离线使用，是一个Progressive Web Applicaiton。
-            footer 
-              a(href="https://cqupt.heitaov.cn", title="将打开新页面" ,target="_blank").class 查看 
+          //- .card
+          //-   h3 重邮课表PWA
+          //-   p 直观展示今天和明天的课表，并且可以离线使用，是一个Progressive Web Applicaiton。
+          //-   footer 
+          //-     a(href="https://cqupt.heitaov.cn", title="将打开新页面" ,target="_blank").class 查看 
           
       .winter
-        .centered
-          .white 
-            h2 你站在桥上看风景， 
-            h2 看风景人在楼上看你。 
-            h2 明月装饰了你的窗子， 
-            h2 你装饰了别人的梦。
-            p.from —— 卞之琳 断章
+        .white 
+          h2 我想变成光，灿烂一整个下午。
+          h2 然后趁着黄昏，
+          h2 说再见。
+          p.right “我走啦~”
         footer.cite
           p Copyright ©2017 <a href="http://www.miitbeian.gov.cn/" target="_blank">蜀ICP备16001587号-1</a>
      
