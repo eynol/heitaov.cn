@@ -1,6 +1,6 @@
 const gulp = require('gulp');
 const del = require('del');
-const imagemin = require('gulp-imagemin');
+// const imagemin = require('gulp-imagemin');
 const stylus = require('gulp-stylus');
 const sourcemaps = require('gulp-sourcemaps');
 var pug = require('gulp-pug');
@@ -26,16 +26,17 @@ gulp.task('stylus:index', function () {
     .pipe(reload({stream: true}))
 
 })
-gulp.task('default', ['views:index', 'stylus:index']);
-
-gulp.task('watch', ['watch:index'], function () {})
-
 gulp.task('watch:index', function () {
   gulp.watch("index.styl", ['stylus:index'])
   gulp.watch("index.pug", ['views:index'])
 })
+gulp.task('default', gulp.series(['views:index', 'stylus:index']));
 
-gulp.task('serve', ['watch'], function () {
+gulp.task('watch', gulp.series(['watch:index']), function () {})
+
+
+
+gulp.task('serve', gulp.series(['watch']), function () {
 
   browserSync.init({server: "./dist",port:7777});
 
@@ -54,6 +55,5 @@ gulp.task('imagemin', function () {
 
   return gulp
     .src('img/**')
-    .pipe(imagemin())
     .pipe(gulp.dest('imgmin'))
 })

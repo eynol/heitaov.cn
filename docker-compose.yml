@@ -1,0 +1,35 @@
+version: '3'
+services:
+  www-heitaov:
+    container_name: www-heitaov
+    build: .
+    restart: unless-stopped
+    # ports:
+    #   - 3000:80
+    environment:
+      TZ: 'Asia/Shanghai'
+    networks:
+      - traefik-net
+    # volumes:
+    #   # - "/etc/timezone:/etc/timezone:ro"
+    #   # - "/etc/localtime:/etc/localtime:ro"
+    #   - ./www:/usr/share/nginx/html
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.www-heitaov.entrypoints=http"
+      - "traefik.http.routers.www-heitaov.rule=Host(`www.heitaov.cn`) || Host(`heitaov.cn`) "
+      - "traefik.http.routers.www-heitaov.middlewares=traefik-https-redirect"
+      - "traefik.http.middlewares.sslheader.headers.customrequestheaders.X-Forwarded-Proto=https"
+      - "traefik.http.middlewares.traefik-https-redirect.redirectscheme.scheme=https"
+      - "traefik.http.routers.www-heitaov-secure.entrypoints=https"
+      - "traefik.http.routers.www-heitaov-secure.rule=Host(`www.heitaov.cn`) || Host(`heitaov.cn`) "
+      # - "traefik.http.routers.www-heitaov-secure.middlewares=traefik-auth"
+      - "traefik.http.routers.www-heitaov-secure.tls=true"
+      # - "traefik.http.routers.www-heitaov-secure.tls.certresolver=dnspod"
+      # - "traefik.http.routers.www-heitaov-secure.tls.domains[0].main=taozi.heitaov.cn"
+      # - "traefik.http.routers.www-heitaov-secure.tls.domains[0].sans=*.taozi.heitaov.cn"
+      # - "traefik.http.routers.www-heitaov-secure.service=api@internal"
+
+networks:
+  traefik-net:
+    external: true
