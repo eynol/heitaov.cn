@@ -1,4 +1,4 @@
 stop:
-	@ docker-compose down
+	@ docker compose down
 deploy:
-	@ docker-compose up -d --force-recreate --build
+	@ docker compose up -d --force-recreate --build
