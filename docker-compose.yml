@@ -16,12 +16,7 @@ services:
     #   - ./www:/usr/share/nginx/html
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.www-heitaov.entrypoints=http"
-      - "traefik.http.routers.www-heitaov.rule=Host(`www.heitaov.cn`) || Host(`heitaov.cn`) "
-      - "traefik.http.routers.www-heitaov.middlewares=traefik-https-redirect"
-      - "traefik.http.middlewares.sslheader.headers.customrequestheaders.X-Forwarded-Proto=https"
-      - "traefik.http.middlewares.traefik-https-redirect.redirectscheme.scheme=https"
-      - "traefik.http.routers.www-heitaov-secure.entrypoints=https"
+      - "traefik.http.routers.www-heitaov-secure.entrypoints=web-secure"
       - "traefik.http.routers.www-heitaov-secure.rule=Host(`www.heitaov.cn`) || Host(`heitaov.cn`) "
       # - "traefik.http.routers.www-heitaov-secure.middlewares=traefik-auth"
       - "traefik.http.routers.www-heitaov-secure.tls=true"
